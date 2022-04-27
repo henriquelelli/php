@@ -1,2 +1,2 @@
-# php
+# PHP - jQuery - Ajax
 studying...
