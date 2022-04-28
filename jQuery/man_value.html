@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+    </script>
+    <script>
+
+        $(document).ready(() => {
+
+            $.each($('.interesses:checked'), function(indice, valor) {
+                console.log(indice, valor.value)
+
+            })
+            
+        })
+
+    </script>
+    
+</head>
+<body>
+
+    <p>Nome: </p>
+    <input type="text" id="nome">
+    <br>
+    <p>Onde você nos encontrou?</p>
+    <select name="" id="origem">
+        <option value="1">Google</option>
+        <option value="2">Facebook</option>
+        <option value="3">Rádio</option>
+        <option value="4">Indicação de amigos</option>
+        <option value="5">Outros meios</option>
+
+    </select>
+    <p>Sexo: </p>
+    <input type="radio" name="sexo" class="sexo" value="f">Feminino<br/>
+    <input type="radio" name="sexo" class="sexo" value="m">Masculino<br/>
+    <br>
+    <p>Interesses</p>
+    <input type="checkbox" name="interesses" class="interesses" value="php">PHP<br/>
+    <input type="checkbox" name="interesses" class="interesses" value="js">Javascript<br/>
+    <input type="checkbox" name="interesses" class="interesses" value="angular">angular<br/>
+    <input type="checkbox" name="interesses" class="interesses" value="nodejs">NodeJS<br/>
+    
+</body>
+    
+</html>
