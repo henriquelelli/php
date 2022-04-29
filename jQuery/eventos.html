@@ -11,17 +11,17 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script>
 			$(document).ready(() => {
-				$('#onload').html('página carregada')
+				$('#onload').html('página carregada');
 
 				$(window).scroll(() => {
-					$('#scroll').html('Scroll acionado')
+					$('#scroll').html('Scroll acionado');
 				})
 				$(window).resize(() => {
-					$('#resize').html('Página redimensionada').css('background-color', 'red')
+					$('#resize').html('Página redimensionada').css('background-color', 'red');
 				})
 
 				$('#div1').scroll(function() {
-					$(this).css('background-color', 'red')
+					$(this).css('background-color', 'red');
 				})
 			})
 		</script>
