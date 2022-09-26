@@ -1,0 +1,19 @@
+##################################
+//Função auxiliar para mapeamento dos dados
+##################################
+$arr_map = [];
+$arr_map = array_map(function($item){
+    $splitted = str_split($item);
+    $line_str = "";
+    foreach($splitted as $key=>$value){
+        if($value !== " "){
+            $line_str .= "$value";
+        }
+        else{
+            $line_str .= "$key";
+        }
+    }
+    return $line_str;
+}, $arr_dados);
+print_r($arr_map);
+########################################
